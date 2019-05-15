@@ -11,6 +11,9 @@ import lombok.Setter;
 @Entity
 
 public class DataRequest {
+	
+	public final static String OPEN_STATUS = "open";
+	public final static String CLOSED_STATUS = "CLOSED";
 
 	public Long getId() {
 		return id;
@@ -36,6 +39,14 @@ public class DataRequest {
 		this.institution = institution;
 	}
 
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
 	@javax.persistence.Id
 	@GeneratedValue
 	private Long id;
@@ -43,5 +54,7 @@ public class DataRequest {
 	private Integer iSource;
 	
 	private String institution;
+	
+	private String status;
 
 }
