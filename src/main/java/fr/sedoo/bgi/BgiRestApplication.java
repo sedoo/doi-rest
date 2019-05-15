@@ -12,10 +12,10 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableAutoConfiguration
 @ComponentScan(basePackages = {"fr.sedoo.bgi"} )
 @EnableScheduling
-public class Application {
+public class BgiRestApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(BgiRestApplication.class, args);
 	}
 	
 }
