@@ -1,0 +1,16 @@
+server:
+    contextPath: /api
+    port: 8080
+logging.level:
+   root: ERROR
+   fr.sedoo: DEBUG
+   
+spring:
+    jpa:
+        show-sql: true
+        hibernate:
+            ddl-auto: create-drop
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.DerbyDialect
+   
